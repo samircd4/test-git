@@ -8,6 +8,7 @@ def go_to_google():
         page = browser.new_page()
         page.goto("https://www.google.com")
         page.screenshot(path="google.png")
+        print('it is working')
         page.wait_for_timeout(50000)
         browser.close()
 
